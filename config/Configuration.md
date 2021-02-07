@@ -1,0 +1,170 @@
+### Example of Natuski configuration file
+
+```json
+{
+  "Visible engine prefix": "\u00267(*) \u0026f(o) \u0026dNatsuki \u0026f(o) \u00267(*)",
+
+  "Network Settings": {
+    "Proxy check": true,
+    "Use alternative address check": true,
+    "Proxy Check API key": "Your key",
+    "Country check": false,
+    "GeoLite2 file path": "Natsuki/GeoLite2-Country.mmdb",
+    
+    "Allowed countries": [
+      "PL",
+      "DE",
+      "ANG"
+    ],
+    "Blocked countries": [
+      "PL",
+      "DE",
+      "ANG"
+    ]
+  },
+
+  "Handshake Settings": {
+    "Natsuki PacketDecoder": true,
+    "Natsuki PacketSplitter": true,
+    "Max connection per second": -1
+  },
+
+  "NamedBinaryTag Settings": {
+    "Action": "NOTIFICATION",
+    "Fix skull exploit": true,
+    "Max NBT size": -1,
+    "NamedBinaryTag reading": false,
+    "Check NamedBinaryTag": true,
+
+    "NamedBinaryTag rules": [
+      {
+        "name": "Author",
+        "type": "STRING",
+        "max": 16,
+        "min": 1
+      },
+      {
+        "name": "Pages",
+        "type": "LIST",
+        "max": 50,
+        "min": 0
+      }
+    ]
+  },
+
+  "PluginMessage Settings": {
+    "Action": "NOTIFICATION",
+    "Max channel length": 64,
+    "Max data length": 10000,
+
+    "Blocked channels": [
+      "WDL"
+    ],
+    "Skipped channels": [
+      "MC|SEdit",
+      "MC|BEdit"
+    ]
+  },
+
+  "AntiBot Settings": {
+    "Ping check": true,
+    "Ping CPS trigger": 15,
+    "Double join": true,
+    "Double join CPS trigger": 15,
+    "KeepAlive check": true,
+    "Payload check": true,
+    "Settings check": true
+  },
+
+  "Packets Settings": {
+    "Action": "NOTIFICATION",
+    "Packet limiter": true,
+
+    "Limits": {
+      "PacketPlayInTransaction": 100,
+      "PacketPlayInEntityAction": 300,
+      "PacketPlayInCloseWindow": 100,
+      "PacketPlayInSetCreativeSlot": 120,
+      "PacketPlayInWindowClick": 70,
+      "PacketPlayInCustomPayload": 100,
+      "PacketPlayInBlockPlace": 100,
+      "PacketPlayInUpdateSign": 30,
+      "PacketPlayInFlying": 200,
+      "PacketPlayInBlockDig": 100,
+      "PacketPlayInArmAnimation": 300,
+      "PacketPlayInUseEntity": 300
+    }
+  },
+
+  "MnecraftServer Settings": {
+    "Unknown command": "Command %command% doesn\u0027t exists use \"\\help\" command to see command list",
+    "Invalid permission message": "You, don\u0027t have permission to execute \"%command%\" command",
+    "Command error": "Error occurred while executing \"%command%\" command",
+    "Player join message": "Hello %player%",
+    "Player quit": "Bye %player%",
+
+    "MOTD": {
+      "Slots": -1,
+      "Protocol": 47,
+      "Online player string": "Players: (%online%/%max%)",
+      "MOTD": "FIRST\nSECOND",
+      "Hover MOTD": [
+        "HELLO",
+        "THERE",
+        "WANNA",
+        "SOME",
+        "SKIDDED",
+        "CODE?",
+        "",
+        "~YOONIKS"
+      ]
+    }
+  },
+
+  "Misc Settings": {
+    "TickPerSecondCommand permission check": false,
+    "AntiRedStone cloak lag": true,
+    "Custom TPS command": true,
+    "Custom TPS message": [
+      "                    §d* §fServer §d*                    ",
+      " §8» §7TPS: §d%tps0%",
+      " §8» §7RAM usage: §d%serverUsedMemory%§7/%serverTotalMemory%§5",
+      " §8» §7CPU usage: §d%serverCpuUsage%§d%",
+      " §8» §7Uptime: §d%uptime%",
+      "                     §d* §fWorld §d*                    ",
+      " §8» §7Loaded entities: §d%loadedEntities%",
+      " §8» §7Loaded chunks: §d%loadedChunks%",
+      "                    §d* §fMachine §d*                    ",
+      " §8» §7RAM usage: §d%machineUsedMemory%§7/%machineTotalMemory%§5",
+      " §8» §7CPU usage: §d%machineCpuUsage%§d%",
+      ""
+    ],
+
+    "Custom plugins command": true
+  },
+
+  "Commands Permissions": {
+    "Status": "",
+    "Reload": "natsuki.reload",
+    "Whitelist": "natsuki.whitelist",
+    "TickPerSecond": "",
+    "Blacklist": "natsuki.blacklist",
+    "Information": ""
+  },
+
+  "Messages": {
+    "DoubleJoin": "You need to rejoin the server",
+    "PayloadChannel": "You have sent too big channel name (%sent%/%max%)",
+    "PayloadData": "You have sent too big data (%sent%/%max%)",
+    "Ping": "You must ping the server before joining it",
+    "AntiBot": "You have been detected as a bot",
+    "InvalidPacketData": "ou have sent invalid packet data (%packet% | %info%)",
+    "BadNamedBinaryTag": "You have sent invalid NBT data (%nbt%)",
+    "BlockedPayload": "You have sent blocked payload channel (%channel%)",
+    "PacketLimit": "You have exceeded your packet per second limit (%packet% | %sent%/%max%)",
+    "NamedBinaryTagRule": "You have sent blocked NBT data (%name% | %sent%/%max%)",
+    "ProxyCheck": "You are probably using a vpn or proxy, if this isn\u0027t the case restart your router",
+    "BlockedCountry": "Your country is blacklisted"
+  }
+}
+```
