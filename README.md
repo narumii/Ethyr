@@ -1,2 +1,2 @@
-# Natsuki-Premium
-Official repo for Natsuki Premium version, mainly for issues and docs.
+# EthyrSecurity
+Official repo for EthyrSecurity products, mainly for issues and docs.
