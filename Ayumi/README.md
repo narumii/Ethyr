@@ -1,1 +1,1 @@
-
+Plugin for Spigot(1.8 - 1.16+)/BungeeCord/Velocity that aims at blocking crash nad dupe exploits
