@@ -1,1 +1,1 @@
-Fork of waterfall, which includes optimizations and (mostly) fixed exploits.
+Fork of WaterFall(BungeeCord), which includes optimizations and (mostly) fixed exploits.
