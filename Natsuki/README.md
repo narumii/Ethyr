@@ -15,6 +15,7 @@ Fork of PaperSpigot, which includes optimizations and (mostly) fixed exploits
  - Networking (even PlayerConnection)
  - EntityTracker
  - Entity Ticking
+ - The 4096 Explosion loop optimization nice mojang XD 
 
 ## TODO
  - Chunk Optimization
