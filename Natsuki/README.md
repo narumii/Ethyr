@@ -15,15 +15,13 @@ Fork of PaperSpigot, which includes optimizations and (mostly) fixed exploits
  - Networking (even PlayerConnection)
  - EntityTracker
  - Entity Ticking
- - The 4096 Explosion loop optimization nice mojang XD 
+ - Explosion
 
 ## TODO
  - Chunk Optimization
  - Falling Blocks Optimization
  - RedStone Optimization
- - TNT Optimization
  - Hopper Optimization
- - Remove Reflections
  - Player Data Loading Optimization
  - Option to Disable MobAI
  - Option to Disable Plants Grow
